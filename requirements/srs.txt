@@ -1,0 +1,8 @@
+HLR:
+
+Build music library and their fingerprint repository
+Create API to upload song sample and match with fingerprint repository
+Deploy application to cloud (Amazon/Google)
+Develop android app to capture audio sample and invoke the match API
+Refine algorithm for matching to reduce search time
+Explore backup cloud for fault tolerance
