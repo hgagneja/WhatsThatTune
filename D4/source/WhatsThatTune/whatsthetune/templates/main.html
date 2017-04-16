@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  -->
+  <style>
+  
+  
+  body{
+	  
+	  background-image: url("music.jpg");
+	  background-size:cover;
+	  height:100%;
+          width:100%;
+          background-position: center center; 
+          background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  
+	  }
+	  
+	h1 {
+	
+	  color: darkorange;
+	  font family: verdana;
+	  font-size: 60px;
+	  
+	  }
+	
+	h2 {
+	
+	  color: peru;
+	  font family: verdana;
+	  font-size: 24px;
+	  
+	  }
+	  
+     p {
+	
+	  color: seashell;
+	  font family: verdana;
+	  font-size: 15px;
+	  
+	  }
+	  
+	  .content button{
+	  
+	  background-color: peru; 
+      border: none;
+      color: maroon;
+	  border-radius: 12px;
+     padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+	
+	}
+	
+	.Menuplate-content a{
+	
+	 color: peru;
+	 font family: verdana;
+	 font-size: 14px;
+	 
+	 }
+	
+	.contact-content{
+	
+	 color: seashell;
+	  font family: verdana;
+	  font-size: 15px;
+	 
+	 }
+	
+
+
+  </style>
+</head>
+<body>
+<div id="Menuplate">
+	
+    	<div id="title"><h1>Whats that tune...</h1></div>
+		
+        <div class="Menuplate-content">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>    	
+        </div>
+    </div> 
+
+	<br>
+	<br>
+	<br>
+
+<div id="menuplate_main">
+    	
+        <span id="home"></span>
+   <div class="content">
+
+       <button onclick="startRecording(this);">record</button>
+        <button onclick="stopRecording(this);" disabled>upload</button>
+  
+        <h2>Catured audio files:</h2>
+        <ul id="recordingslist"></ul>
+  
+    </div>
+  
+  <br>
+  <br>
+        <span id="about"></span>
+		
+  <div class="content">
+  
+    		<h2>About Us</h2>
+			
+			<p> hello I am akash </p>
+ 
+    </div>
+  
+  <br>
+  <br>
+           <span id="services"></span>
+		   
+  <div class="content">
+	
+    		<h2>Services</h2>
+  
+            <p> Acoutic figerprint - hsahsgshahsagsgasgsahsg </p>
+			<p> Parallel Processing via hash value </p>
+			<p> Acoutic figerprint - hsahsgshahsagsgasgsahsg </p>
+			<p> Parallel Processing via hash value </p>
+			<p> Acoutic figerprint - hsahsgshahsagsgasgsahsg </p>
+			<p> Parallel Processing via hash value </p>
+			<p> Acoutic figerprint - hsahsgshahsagsgasgsahsg </p>
+			<p> Parallel Processing via hash value </p>
+			<p> Acoutic figerprint - hsahsgshahsagsgasgsahsg </p>
+			<p> Parallel Processing via hash value </p>
+			<p> Acoutic figerprint - hsahsgshahsagsgasgsahsg </p>
+			<p> Parallel Processing via hash value </p>
+			
+	</div>
+			
+	<br>
+	<br>
+            <span id="contact"></span>
+			
+   <div class="content">
+	   
+    		 <h2>Mailing Address:</h2>
+		 <div class="contact-content">
+               Apt.1204- 2121 <br />
+               Rue Saint Mathieu<br />
+               Montreal,Quebec,Canada<br />
+				
+			 <b>Phone:</b> 5146793972<br />
+             <b>Email:</b> <a href="mailto:akashssawant@gmail.com">akashssawant@gmail.com</a>
+	      </div>
+	</div>
+	
+</div>		
+
+  
+  
+
+
+  <script>
+  function __log(e, data) {
+    log.innerHTML += "\n" + e + " " + (data || '');
+  }  
+
+  var audio_context;
+  var recorder;
+
+  function startUserMedia(stream) {
+    var input = audio_context.createMediaStreamSource(stream);
+  
+    recorder = new Recorder(input);
+  
+  }
+
+  function startRecording(button) {
+    recorder && recorder.record();
+    button.disabled = true;
+    button.nextElementSibling.disabled = false;
+   
+  }
+
+  function stopRecording(button) {
+    recorder && recorder.stop();
+    button.disabled = true;
+    button.previousElementSibling.disabled = false;
+  
+    createDownloadLink();
+    
+    recorder.clear();
+  }
+
+  function createDownloadLink() {
+    recorder && recorder.exportWAV(function(blob) {
+      var url = URL.createObjectURL(blob);
+      var li = document.createElement('li');
+      var au = document.createElement('audio');
+      var hf = document.createElement('a');
+      
+      au.controls = true;
+      au.src = url;
+      hf.href = url;
+      hf.download = new Date().toISOString() + '.wav';
+      hf.innerHTML = hf.download;
+      li.appendChild(au);
+      li.appendChild(hf);
+      recordingslist.appendChild(li);
+    });
+  }
+
+  window.onload = function init() {
+    try {
+      
+      window.AudioContext = window.AudioContext || window.webkitAudioContext;
+      navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia;
+      window.URL = window.URL || window.webkitURL;
+      
+      audio_context = new AudioContext;
+   
+    } catch (e) {
+      alert('No web audio support in this browser!');
+    }
+    
+    navigator.getUserMedia({audio: true}, startUserMedia, function(e) {
+   
+    });
+  };
+  </script>
+
+  <script src="{% static 'js/recorder.js' %}"></script>
+</body>
+</html>
