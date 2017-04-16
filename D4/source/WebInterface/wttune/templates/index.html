@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+{% load staticfiles %}
+<!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  -->
+  <style>
+  
+  
+  body{
+	  
+	  background-image: url("../static/img/music.jpg");
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  
+	  }
+	  
+	h1 {
+	  margin-top: 15px;
+	  margin-left: 45px;
+	  text-align: left;
+	  color: darkorange;
+	  font family: verdana;
+	  font-size: 60px;
+	  
+	  }
+	
+	h2 {
+	
+	  color: peru;
+	  font family: verdana;
+	  font-size: 24px;
+	  
+	  }
+	  
+	h3{
+	  margin-top: 40px;
+	  line-height: 0px; 
+	  color: peru;
+	  font family: verdana;
+	  font-size: 20px;
+	  
+	  }
+
+        h4{
+          margin-top: 40px;
+          line-height: 0px;
+          color: darkorange;
+          font family: verdana;
+          font-size: 20px;
+
+          }
+
+	  
+    .b_content button {
+	  
+	  background-color: peru; 
+      border: none;
+      color: maroon;
+	  border-radius: 15px;
+     padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    margin: 8px 8px;
+    cursor: pointer;
+	
+	}
+	
+	#play:hover{
+			background: green;
+			   	color:white;
+				
+	
+      }
+	  
+       #pause:hover{
+			background: green;
+			   	color:white;
+	
+      }
+	
+	.Menuplate-content a{
+	
+	 color: peru;
+	 font family: verdana;
+	 font-size: 25px;
+	 text-align: center;
+	 
+	 }
+	
+	
+	 
+	 .b_content{
+	  margin-left: 100px;
+	  margin-top: 100px;
+	  }
+	 
+	 ul{
+	 
+	 list-style-type: none;
+	 
+	 }
+	 
+	ul li{
+	 margin-left: 3px;
+	 font-size: 150%;
+	 display: inline-block;
+	 float:left;
+	 padding:10px;
+	 }
+		
+	
+	 ul li a{
+	 text-decoration: none;
+	 
+	 }
+
+
+  </style>
+</head>
+<body>
+<div id="Menuplate">
+	
+    	<div id="title"><h1>What's that tune....</h1></div>
+		
+        <div class="Menuplate-content">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href= "services">Services</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>    	
+        </div>
+    </div> 
+
+	<br>
+
+<div id="menuplate_main">
+    	
+        <span id="home"></span>
+		
+    <br>
+  
+  <div class="b_content">
+   <h3> * Press record to capture the audio input </h3>
+   <h3> * Press upload to deploy catured audio sample on server for further process </h3>
+
+           <form action="#home" method="post">
+           <button id="play" onclick="microphone.start();">record</button> 
+           </form>
+   
+<!--       <button id="play" onclick="microphone.start();">record</button> -->
+	   
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+<!--	   <button id="pause" onclick="stopRecording(this);" disabled>upload</button> -->
+  
+<!--        <h2>Captured audio files:</h2>
+        <ul id="recordingslist"></ul> -->
+        
+        <h2>Song Search Result</h2>
+        <h4>Song Name : {{ message_name }} </h4>
+        <h4>Artist : {{ message_artist }} </h4>
+        <h4>Album : {{ message_album }} </h4>
+        
+	<h2>Spotify Link</h2>
+        <h4>Track :  <a href="{{ spotify_link }}">{{ message_name }}</h4>
+  
+    </div>
+   </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/wavesurfer.min.js"></script>
+
+<!-- wavesurfer.js microphone -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/plugin/wavesurfer.microphone.min.js"></script>
+
+<!--<div id="waveform"></div>
+
+  <div class="b_content">
+
+        <h2>Song Search Result</h2>
+        <h4>Song Name : {{ message_name }} </h4>
+        <h4>Artist : {{ message_artist }} </h4>
+        <h4>Album : {{ message_album }} </h4>
+
+   </div> -->
+	   
+
+  <script>
+var wavesurfer = WaveSurfer.create({ container: '#waveform', waveColor: 'violet' });
+
+var microphone = Object.create(WaveSurfer.Microphone);
+
+microphone.init({
+    wavesurfer: wavesurfer
+});
+
+microphone.on('deviceReady', function(stream) {
+    console.log('Device ready!', stream);
+});
+microphone.on('deviceError', function(code) {
+    console.warn('Device error: ' + code);
+});
+  </script>
+ 	 
+  <script>
+  function __log(e, data) {
+    log.innerHTML += "\n" + e + " " + (data || '');
+  }  
+
+  var audio_context;
+  var recorder;
+
+  function startUserMedia(stream) {
+    var input = audio_context.createMediaStreamSource(stream);
+  
+    recorder = new Recorder(input);
+  
+  }
+
+  function startRecording(button) {
+  
+    recorder && recorder.record();
+    button.disabled = true;
+    button.nextElementSibling.disabled = false;
+	
+   
+  }
+
+  function stopRecording(button) {
+    recorder && recorder.stop();
+    button.disabled = true;
+    button.previousElementSibling.disabled = false;
+  
+    createDownloadLink();
+    
+    recorder.clear();
+  }
+
+  function createDownloadLink() {
+    recorder && recorder.exportWAV(function(blob) {
+      var url = URL.createObjectURL(blob);
+      var li = document.createElement('li');
+      var au = document.createElement('audio');
+      var hf = document.createElement('a');
+      
+      au.controls = true;
+      au.src = url;
+      hf.href = url;
+      hf.download = new Date().toISOString() + '.wav';
+      hf.innerHTML = hf.download;
+      li.appendChild(au);
+      li.appendChild(hf);
+      recordingslist.appendChild(li);
+    });
+  }
+
+  window.onload = function init() {
+    try {
+      
+      window.AudioContext = window.AudioContext || window.webkitAudioContext;
+      navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia;
+      window.URL = window.URL || window.webkitURL;
+      
+      audio_context = new AudioContext;
+   
+    } catch (e) {
+      alert('No web audio support in this browser!');
+    }
+    
+    navigator.getUserMedia({audio: true}, startUserMedia, function(e) {
+   
+    });
+  };
+  
+  </script>
+  
+ <!-- <script> 
+  
+ function myAlert(){
+    
+	alert("Recording begins");
+	 
+	 }
+	 </script> -->
+
+  <script src="{% static 'js/recorder.js' %}"></script>
+</body>
+</html>
