@@ -1,0 +1,103 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:2:1-26:12
+	package
+		ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:3:5-49
+		INJECTED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:5:22-78
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:6:5-71
+	android:name
+		ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:6:22-68
+uses-permission#android.permission.STORAGE
+ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:7:5-66
+	android:name
+		ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:7:22-63
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:8:22-64
+application
+ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:10:5-24:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\harvi\.android\build-cache\99cd5962e3c77846cc65156f357eb6622ee3e84b\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\harvi\.android\build-cache\482d464d25933db0244ef8b38126b61ab1c330ff\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\harvi\.android\build-cache\2afe9a8fc3349f276ab3fda5c7197d9bfefed0c4\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\harvi\.android\build-cache\39b180e60749a478509be8d5f53511518246466b\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\harvi\.android\build-cache\fd1d9f36a2bca47db76c1503fab3b74b7b2eddaf\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\harvi\.android\build-cache\e9f42e32ae34f9291249d05c47e11d4cd7be7278\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\harvi\.android\build-cache\015bd81a0bcb20da4f929cfc3d0bbc7b81ba131d\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\harvi\.android\build-cache\fc9826e58e8e10ab7c150761ee77517ff28132ce\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\harvi\.android\build-cache\bea99c806ee159324431fe1364b0cb9b9024b63b\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\harvi\.android\build-cache\d3e753fa24fa28aef39066334a48f51829e3aa21\output\AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:13:9-41
+	android:supportsRtl
+		ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:15:9-35
+	android:roundIcon
+		ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:14:9-54
+	android:allowBackup
+		ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:11:9-35
+	android:icon
+		ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:12:9-43
+	android:theme
+		ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:16:9-40
+activity#ca.concordia.coen691.whatsthattune.MainActivity
+ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:17:9-23:20
+	android:name
+		ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:17:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:18:13-22:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml:21:27-74
+uses-sdk
+INJECTED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\harvi\.android\build-cache\99cd5962e3c77846cc65156f357eb6622ee3e84b\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\harvi\.android\build-cache\482d464d25933db0244ef8b38126b61ab1c330ff\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\harvi\.android\build-cache\2afe9a8fc3349f276ab3fda5c7197d9bfefed0c4\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\harvi\.android\build-cache\39b180e60749a478509be8d5f53511518246466b\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\harvi\.android\build-cache\fd1d9f36a2bca47db76c1503fab3b74b7b2eddaf\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\harvi\.android\build-cache\e9f42e32ae34f9291249d05c47e11d4cd7be7278\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\harvi\.android\build-cache\015bd81a0bcb20da4f929cfc3d0bbc7b81ba131d\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\harvi\.android\build-cache\fc9826e58e8e10ab7c150761ee77517ff28132ce\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\harvi\.android\build-cache\bea99c806ee159324431fe1364b0cb9b9024b63b\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\harvi\.android\build-cache\d3e753fa24fa28aef39066334a48f51829e3aa21\output\AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\harvi\.android\build-cache\99cd5962e3c77846cc65156f357eb6622ee3e84b\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\harvi\.android\build-cache\99cd5962e3c77846cc65156f357eb6622ee3e84b\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\harvi\.android\build-cache\482d464d25933db0244ef8b38126b61ab1c330ff\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\harvi\.android\build-cache\2afe9a8fc3349f276ab3fda5c7197d9bfefed0c4\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\harvi\.android\build-cache\39b180e60749a478509be8d5f53511518246466b\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\harvi\.android\build-cache\fd1d9f36a2bca47db76c1503fab3b74b7b2eddaf\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\harvi\.android\build-cache\e9f42e32ae34f9291249d05c47e11d4cd7be7278\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\harvi\.android\build-cache\015bd81a0bcb20da4f929cfc3d0bbc7b81ba131d\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\harvi\.android\build-cache\fc9826e58e8e10ab7c150761ee77517ff28132ce\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\harvi\.android\build-cache\bea99c806ee159324431fe1364b0cb9b9024b63b\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\harvi\.android\build-cache\99cd5962e3c77846cc65156f357eb6622ee3e84b\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\harvi\.android\build-cache\99cd5962e3c77846cc65156f357eb6622ee3e84b\output\AndroidManifest.xml:26:9-47
