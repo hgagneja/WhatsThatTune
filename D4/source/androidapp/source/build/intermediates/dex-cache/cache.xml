@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\harvi\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_c5ca935122049e71b6f68135595ad19e25651781.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\harvi\.android\build-cache\482d464d25933db0244ef8b38126b61ab1c330ff\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\build\intermediates\pre-dexed\debug\classes_84764c163480d6dbe3241868ca923de14c2f3af8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\harvi\.android\build-cache\39b180e60749a478509be8d5f53511518246466b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\build\intermediates\pre-dexed\debug\classes_ed42843f3866d785738fda780dd29261cd00fe2a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\harvi\.android\build-cache\bea99c806ee159324431fe1364b0cb9b9024b63b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\build\intermediates\pre-dexed\debug\classes_4fbdbc22c57ff599f1f83f1c73bc6dc06312168a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\harvi\.android\build-cache\e9f42e32ae34f9291249d05c47e11d4cd7be7278\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\build\intermediates\pre-dexed\debug\classes_a40c2a8b5f8f4c2d2350f673a9b48a367a62f029.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\harvi\.android\build-cache\fd1d9f36a2bca47db76c1503fab3b74b7b2eddaf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\build\intermediates\pre-dexed\debug\classes_aa61060a7ac73bb1be05a890e705b6becbf8a7d0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\harvi\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.5\6c6c702c89bfff3cd9e80b04d668c5e190d588c6\commons-lang3-3.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6c6c702c89bfff3cd9e80b04d668c5e190d588c6">
+        <dex dex="C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\build\intermediates\pre-dexed\debug\commons-lang3-3.5_4c5c3895981dbaac86abc13f5c1d2667ab5b4266.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\harvi\.android\build-cache\d3e753fa24fa28aef39066334a48f51829e3aa21\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\build\intermediates\pre-dexed\debug\classes_6c87421f74f94bf7c8314895ff47ff35d7f37b24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\harvi\.android\build-cache\015bd81a0bcb20da4f929cfc3d0bbc7b81ba131d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\build\intermediates\pre-dexed\debug\classes_3efa6fcb7bebf51840e954a1513ebb7e2cedd7a3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\harvi\.android\build-cache\fc9826e58e8e10ab7c150761ee77517ff28132ce\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\build\intermediates\pre-dexed\debug\classes_cc73c0bdf1149e63f9bc1b2ab2d4bffc4784d706.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\harvi\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\build\intermediates\pre-dexed\debug\gson-2.7_0a165edaad20560247c670f641092cdffd25bacd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\harvi\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_34af1646e2309cd6eed47607418dc241f44e1dc8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\harvi\.android\build-cache\99cd5962e3c77846cc65156f357eb6622ee3e84b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\build\intermediates\pre-dexed\debug\classes_8294734fe3a95116f0d2fdbef1f260a9f71e2481.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\harvi\.android\build-cache\2afe9a8fc3349f276ab3fda5c7197d9bfefed0c4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\Users\harvi\AndroidStudioProjects\WhatsThatTune\app\build\intermediates\pre-dexed\debug\classes_1b262025f2389c5898b98a7acbdc2703614dbfac.jar" />
+    </item>
+
+</items>
