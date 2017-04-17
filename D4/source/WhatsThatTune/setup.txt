@@ -1,0 +1,24 @@
+
+
+############ In Centos based machine ###################
+
+yum install mysql-devel python-devel python-setuptools
+yum install python-devel
+yum install libffi-devel
+pip install --no-cache-dir matplotlib
+yum install libpng-devel freetype-devel
+yum install gcc-c++
+yum install lapack-devel.x86_64 blas-devel.x86_64
+wget http://www.portaudio.com/archives/pa_stable_v190600_20161030.tgz
+sudo yum install libsndfile-devel fftw-devel lapack-devel portaudio-develsudo yum install libsndfile-devel fftw-devel lapack-devel portaudio-devel
+sudo yum install alsa-lib-devel
+
+############ In debian based machine ###################
+
+sudo apt-get install python-mysqldb
+sudo apt install libffi-dev python-setuptools python-dev
+sudo apt-get install libpng-dev
+sudo apt-get install libfreetype6-dev
+sudo apt-get install pkg-config
+sudo apt-get install portaudio19-dev
+sudo apt-get install libasound-dev
